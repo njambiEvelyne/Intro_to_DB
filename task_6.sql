@@ -6,6 +6,7 @@ CREATE TABLE IF NOT EXISTS customer (
     email VARCHAR(215),
     address TEXT
 );
+
 -- Use the database passed as argument
 USE alx_book_store;
 
