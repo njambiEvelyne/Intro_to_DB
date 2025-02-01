@@ -1,5 +1,8 @@
 -- Use the database passed as argument
+-- Use the database passed as argument
 USE alx_book_store;
 
--- Get full description of the books table
-SHOW COLUMNS FROM books;
+-- Get full description of the books table using INFORMATION_SCHEMA
+SELECT COLUMN_NAME, COLUMN_TYPE
+FROM INFORMATION_SCHEMA.COLUMNS
+WHERE TABLE_SCHEMA = 'alx_book_store' AND TABLE_NAME = 'Books';
