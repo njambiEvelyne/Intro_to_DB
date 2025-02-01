@@ -1,4 +1,12 @@
 -- Use the database passed as argument
+-- Create the customer table if it doesn't exist
+CREATE TABLE IF NOT EXISTS customer (
+    customer_id INT PRIMARY KEY,
+    customer_name VARCHAR(215),
+    email VARCHAR(215),
+    address TEXT
+);
+-- Use the database passed as argument
 USE alx_book_store;
 
 -- Insert multiple rows into the customer table
